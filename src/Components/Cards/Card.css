@@ -1,0 +1,24 @@
+.card-container img{
+    width: 300px;
+    height: 300px;
+}
+.card-container{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+}
+.card-container h2{
+    margin: 0;
+}
+.btn{
+    width: 100%;
+    padding: 0;
+    font-weight: bold;
+    background-color: aquamarine;
+    border: 0;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: chocolate;
+    color: white;
+}

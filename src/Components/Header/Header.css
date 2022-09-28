@@ -1,0 +1,9 @@
+.header{
+    padding-top: 100px;
+    margin-left: 200px;
+}
+
+.header h1{
+    color: chocolate;
+    font-size: 30px;
+}

@@ -1,0 +1,83 @@
+.container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.bookcart{
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.bookcartdetails{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 20px;
+}
+.name-details{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.name-details img{
+    width: 50px;
+}
+.name-details h4{
+    margin: 0;
+}
+.name-details p{
+    margin: 0;
+}
+.weight-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgb(229, 229, 229);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.break-part{
+    display: flex;
+    background-color:rgb(229, 229, 229);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+.break-time{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border: 0;
+    border-radius: 50%;
+}
+.break-time p{
+    margin: 0;
+    font-size: 20px;
+}
+.break-time:hover{
+    background-color: tomato;
+    color: white;
+}
+.time-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.time-part{
+    background-color: rgb(229, 229, 229);
+    padding:  0px 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.activity-btn{
+    border: 0;
+    width: 100%;
+    background-color: goldenrod;
+    font-weight: bold;border-radius: 10px;
+}
+.activity-btn:hover{
+    background-color: orange;
+    color: white;
+}
