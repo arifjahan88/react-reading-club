@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Card.css";
 
 const Cards = (props) => {
   const { name, img, time, details, age } = props.card;
+
+  // const [count, setcount] = useState(0);
   const Clickhundle = (time) => {
+    // const newarr = [...count, time];
+    // setcount(newarr);
     console.log(time);
   };
   return (

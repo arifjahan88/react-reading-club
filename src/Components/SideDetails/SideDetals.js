@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SideDetails.css";
 import logo from "../Logo/logo.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const SideDetals = () => {
+const SideDetals = (props) => {
+  const [time, settime] = useState(0);
+
   const toastmake = () => {
     toast.success("Activity Complited", {
       position: "top-center",
@@ -58,7 +60,7 @@ const SideDetals = () => {
       <div className="time-part">
         <div className="time-container">
           <h3>Reading Time</h3>
-          <p>0 Seconds</p>
+          <p>{time} Seconds</p>
         </div>
       </div>
       <div className="time-part">

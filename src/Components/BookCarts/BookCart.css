@@ -14,3 +14,9 @@
     border-radius: 10px;
     padding: 20px;
 }
+@media screen and (max-width:768px) {
+    .bookcart{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}

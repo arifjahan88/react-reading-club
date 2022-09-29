@@ -5,6 +5,7 @@ import SideDetals from "../SideDetails/SideDetals";
 
 const BookCart = () => {
   const [cards, setcards] = useState([]);
+
   useEffect(() => {
     fetch("Details.json")
       .then((res) => res.json())
@@ -18,7 +19,7 @@ const BookCart = () => {
         ))}
       </div>
       <div className="bookcartdetails">
-        <SideDetals></SideDetals>
+        <SideDetals cart={cards}></SideDetals>
       </div>
     </div>
   );
