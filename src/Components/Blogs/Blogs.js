@@ -4,7 +4,9 @@ import "./Blogs.css";
 const Blogs = () => {
   return (
     <div className="blog-container">
-      <div>
+      <h1>WelCome To Blog</h1>
+      <hr />
+      <div className="blog">
         <h2>Question 1 : How does react Works?</h2>
         <p>
           Answers : The user interface is broken up into discrete, reusable code
@@ -14,7 +16,7 @@ const Blogs = () => {
           making your code clumsy.
         </p>
       </div>
-      <div>
+      <div className="blog">
         <h2>Question 2 : Difference between props and state in react?</h2>
         <p>
           Answers : State is the component's internal state, which cannot be
@@ -24,8 +26,8 @@ const Blogs = () => {
           them reusable.
         </p>
       </div>
-      <div>
-        <h2>Question 2 : What is the use of useeffect in react?</h2>
+      <div className="blog">
+        <h2>Question 3 : What is the use of useeffect in react?</h2>
         <p>
           Answers : To get rid of the negative impacts of employing class-based
           components, useEffect Hook was introduced. Examples of operations that

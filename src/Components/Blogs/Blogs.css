@@ -1,0 +1,35 @@
+.blog{
+    margin: 10px;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+.blog-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    
+}
+.blog-container hr{
+    border: 1px solid tomato;
+    width: 75%;
+}
+.blog-container h2{
+    color: chocolate;
+}
+
+@media screen and (max-width:768px) {
+    .blog-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        padding-left: 200px;  
+        width: 100%; 
+    }
+    .blog{
+        margin: 10px;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+}
