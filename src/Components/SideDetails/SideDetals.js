@@ -2,7 +2,8 @@ import "./SideDetails.css";
 import logo from "../Logo/logo.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { addToDb, getstoreddata } from "../../utilities/fakedb";
 
 const SideDetals = (props) => {
   const [newBreak, setBreak] = useState(0);
@@ -14,8 +15,20 @@ const SideDetals = (props) => {
     });
   };
 
+  useEffect(() => {
+    const storeddata = getstoreddata();
+    const savecart = [];
+    for (const value in storeddata) {
+      //const adedvalue = storeddata;
+      savecart.push(value);
+      console.log(savecart);
+    }
+    setBreak(savecart);
+  }, []);
+
   const getbreaktime = (value) => {
     setBreak(value);
+    addToDb(value);
     console.log(newBreak);
   };
   return (
