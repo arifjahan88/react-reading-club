@@ -1,15 +1,9 @@
-import React, { useState } from "react";
 import "./Card.css";
 
 const Cards = (props) => {
   const { name, img, time, details, age } = props.card;
+  const { handleclickcart } = props;
 
-  // const [count, setcount] = useState(0);
-  const Clickhundle = (time) => {
-    // const newarr = [...count, time];
-    // setcount(newarr);
-    console.log(time);
-  };
   return (
     <div className="card-container">
       <div>
@@ -17,9 +11,9 @@ const Cards = (props) => {
         <h2>{name}</h2>
         <p>{details}</p>
         <p>Age For : {age}</p>
-        <h4>Required Time : {time}</h4>
+        <h4>Required Time : {time} Seconds</h4>
       </div>
-      <button onClick={() => Clickhundle(time)} className="btn">
+      <button onClick={() => handleclickcart(time)} className="btn">
         <p>Add To List</p>
       </button>
     </div>

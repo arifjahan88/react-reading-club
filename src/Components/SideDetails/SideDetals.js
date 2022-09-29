@@ -1,17 +1,18 @@
-import React, { useState } from "react";
 import "./SideDetails.css";
 import logo from "../Logo/logo.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const SideDetals = (props) => {
-  const [time, settime] = useState(0);
-
   const toastmake = () => {
     toast.success("Activity Complited", {
       position: "top-center",
       theme: "dark",
     });
+  };
+
+  const getbreaktime = (p) => {
+    console.log(p);
   };
   return (
     <div>
@@ -39,28 +40,18 @@ const SideDetals = (props) => {
         </div>
       </div>
       <h2>Add a Break</h2>
-      <div className="break-part">
-        <button className="break-time">
-          <p>10</p>
-        </button>
-        <button className="break-time">
-          <p>20</p>
-        </button>
-        <button className="break-time">
-          <p>30</p>
-        </button>
-        <button className="break-time">
-          <p>40</p>
-        </button>
-        <button className="break-time">
-          <p>50</p>
-        </button>
-      </div>
+      <button onClick={() => getbreaktime()} className="break-part">
+        <p className="break-time">10</p>
+        <p className="break-time">20</p>
+        <p className="break-time">30</p>
+        <p className="break-time">40</p>
+        <p className="break-time">50</p>
+      </button>
       <h2>Reading Details</h2>
       <div className="time-part">
         <div className="time-container">
           <h3>Reading Time</h3>
-          <p>{time} Seconds</p>
+          <p>{props.newtime} Seconds</p>
         </div>
       </div>
       <div className="time-part">
