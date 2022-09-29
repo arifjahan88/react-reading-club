@@ -5,7 +5,7 @@ import SideDetals from "../SideDetails/SideDetals";
 
 const BookCart = () => {
   const [cards, setcards] = useState([]);
-  const [newtime, setTime] = useState([]);
+  const [newtime, setTime] = useState(0);
 
   useEffect(() => {
     fetch("Details.json")
