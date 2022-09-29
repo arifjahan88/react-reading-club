@@ -17,15 +17,11 @@ const SideDetals = (props) => {
 
   useEffect(() => {
     const storeddata = getstoreddata();
-    console.log(storeddata);
+
     for (const value in storeddata) {
-      //const adedvalue = storeddata[value];
       setBreak(value);
       console.log(value);
     }
-
-    //console.log(storeddata);
-    //setBreak(adedvalue);
   }, []);
 
   const getbreaktime = (value) => {

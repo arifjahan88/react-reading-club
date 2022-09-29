@@ -31,14 +31,12 @@ const getstoredcarddata = () => {
 };
 
 const getstoreddata = () => {
-  let shoppingCart = {};
-
   //get the shopping cart from local storage
   const storedCart = localStorage.getItem("Break-Value");
   if (storedCart) {
-    shoppingCart = JSON.parse(storedCart);
+    const shoppingCart = JSON.parse(storedCart);
+    return shoppingCart;
   }
-  return shoppingCart;
 };
 
 export { addToDb, getstoredcarddata, getstoreddata };
